@@ -1,0 +1,84 @@
+
+body {
+    font-family: 'Your Chosen Font', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Set your background color */
+    color: #333; /* Set your text color */
+}
+
+h3{ background-color: #B9A2A2;
+    padding: 3px 8px;
+    border-radius:8px;}
+
+
+header {
+    background-color: #B9A2A2; /* Set your header background color */
+    color: #fff; /* Set your header text color */
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 100px; /* Adjust your image width */
+    border-radius: 50%;
+}
+
+nav {
+    background-color: #333; /* Set your navigation background color */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #fff; /* Set your link text color */
+}
+
+nav a:hover {
+    background-color: #555; /* Set your link hover background color */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333; /* Set your footer background color */
+    color: #fff; /* Set your footer text color */
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
