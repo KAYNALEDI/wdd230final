@@ -71,6 +71,32 @@ footer {
     padding: 10px;
 }
 
+button#hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    nav.nav-menu {
+        display: none;
+    }
+
+    button#hamburger {
+        display: block;
+    }
+}
+
+button#hamburger::before {
+    content: '\2715'; /* Unicode for 'X' */
+    font-size: 24px;
+    color: #fff;
+}
+
+
 
 
 
