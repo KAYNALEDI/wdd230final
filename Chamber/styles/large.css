@@ -1,1 +1,239 @@
 
+:root {
+    --bg-color: #fff9eb;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: var(--bg-color);
+      font-family: "Montserrat";
+    }
+    nav ul {
+      flex-direction: row;
+    }
+  
+    nav ul li {
+      text-align: center;
+      flex: 1;
+    }
+  
+    #navbar {
+      display: flex;
+      max-width: 100%;
+      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
+    }
+    nav ul li a {
+      line-height: 1;
+      padding: 1rem;
+      border: 1px solid #ffff;
+      font-size: 1rem;
+      text-align: center;
+      border: none;
+      color: #ffff;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #025eb8;
+      background-color: rgba(255,255,255,.5);
+    }
+    nav ul li a:active {
+      background-color: #709f88;
+      color: #025eb8;
+    }
+    nav ul li a:focus {
+      background-color: #709f88;
+      color: #025eb8;
+    }
+    nav ul li a:focus-visible {
+      background-color: #709f88;
+      color: #025eb8;
+    }
+  
+   
+  
+    .membership {
+      max-width: none;
+      height: 600px;
+      width: 600px;
+    }
+    form fieldset {
+      min-width: 40rem;
+    }
+    .images:hover {
+      border-radius: 20%;
+    }
+    .directory-list {
+      display: grid;
+      justify-items: center;
+      padding: 1rem;
+      font-size: 1.3em;
+    }
+    .font {
+      font-size: 20px;
+    }
+  
+    .discover-daddy {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .member-2 {
+      font-size: 16px;
+    }
+    .submit-button {
+      margin-top: 20px;
+    }
+    .grid-1 {
+      width: 600px;
+      
+    }
+    
+    }
+    .contact2 {
+      padding: 2vw;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 600px;
+    }
+    .contact3 {
+      margin-right: 80px;
+  
+    .address-map {
+      width: 600px;
+      height: 450px;
+    }
+    .Address-h1 {
+      text-align: center;
+    }
+    .map {
+      width: 500px;
+      height: 300px;
+      margin-left: 25px;
+    }
+    .directory-cards section {
+      width: 400px;
+      height: 250px;
+    }
+  }
+  
+  .discover {
+    width: 800px;
+  }
+  .main {
+    display: grid;
+    grid-template-areas:
+      "e h h p"
+      "w h h p"
+      "j n n p";
+  }
+  
+    #section-a {
+      grid-area: h;
+      position: relative;
+      
+    }
+    #section-b {
+      grid-area: e;
+      
+    }
+    .section-c {
+      grid-area: w;
+     
+    }
+    .section-d {
+      grid-area: n;
+      
+    }
+    .section-j {
+      grid-area: j;
+      align-content: center;
+      position: relative;
+      
+    }
+    .spotlights {
+      grid-area: sp;
+      display: flex;
+      display: grid;
+      grid-template-areas:
+        "s1"
+        "s2"
+        "s3";
+    }
+    #hamburger-menu {
+      display: none;
+    }
+    .section-e {
+      grid-area: j;
+      
+    }
+  
+    .section-f {
+      grid-area: s2;
+     
+    }
+    .section-g {
+      display: inline;
+      grid-area: s3;
+      
+    }
+    #welcome {
+      position: absolute;
+      font-size: 2.5em;
+      top: 5%;
+      left: 0%;
+      color: #264a41;
+    }
+    .join {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      background-color: var(--bg-color);
+      color: #264a41;
+      font-size: 1.5em;
+      padding: 10px 10px;
+      border-radius: 5px;
+      margin: 0;
+      position: absolute;
+      top: 90%;
+      left: 80%;
+      align-content: center;
+      font-family: "Raleway";
+    }
+   
+   
+    .start {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      background-color: var(--bg-color);
+      color: #264a41;
+      font-size: 1.5em;
+      padding: 10px 10px;
+      border-radius: 5px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      align-content: center;
+      font-family: "Raleway";
+    }
+    .join:hover {
+      background-color: #264a41;
+      color: white;
+    }
+    .start:hover {
+      background-color: #264a41;
+      color: white;
+    }
+    .main-form {
+      display: flex !important;
+      justify-content: space-evenly !important;
+      margin-bottom: 40px;
+    }
+    
