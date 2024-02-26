@@ -1,7 +1,4 @@
-Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. 
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-/*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
@@ -751,66 +748,6 @@ max-width: 20em;
 margin: 0 auto;
 }
 
-/*----------- FOOTER --------------*/
-footer {
-  background-color: var(--bg-color);
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.9em;
-}
-
-.contact-info {
-  display: grid;
-  grid-template-columns: 1fr 3fr  1fr;
-  gap: 20px;
-  align-items: center;
-  justify-items: center;
-  margin: 20px 0;
-}
-
-.contact-info iframe {
-/*   display: grid;
-  grid-template-columns: 1fr 1fr; */
-  width: 400px;
-  height: 170px;
-  border: none;
-}
-
-.contact-info h3 {
-  text-align: l;
-  margin-bottom: 10px;
-}
-
-.contact-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-.contact-info li {
-  margin-bottom: 5px;
-}
-
-.social-links {
-  display: grid;
-  grid-template-columns: 1fr fr 1fr;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-
-.social-links a {
-  text-decoration: none;
-  color: #264a41;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.social-links i {
-  margin-right: 10px;
-}
 
 body {
   font-family: Arial, sans-serif;
