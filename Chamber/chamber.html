@@ -26,144 +26,165 @@
   <link rel="stylesheet" href="styles/normalize.css">
   
   
+  </head>
+  <body>
+    <!-- TOP ANNOUNCEMENT BANNER HERE -->
+    <div class="announcement-banner">
+      🤝🏼 Come join us for a local food dine tour meet greet Wednesday at 7:00 p.m.
+    </div>
+    <!-- BAD WEATHER BANNER HERE -->
+    <div class="weather-warning-banner">☁ Weather Alert! Warning</div>
+    <!-- HEADER HERE -->
+    <header>
+      <div class="header-content">
+        <a href="index.html"
+          ><img src="./images/wee.jpeg" alt="Commerce Logo"
+        /></a>
+        <div>
+          <h1>Johannesburg Chamber of Commerce</h1>
+          <h2>Where heart meets soul!</h2>
+        </div>
 
-</head>
+        <div class="date">current date</div>
+      </div>
+    </header>
 
-<body>
-
-  <header>
-    <div id="logo_link">
-      <!-- Add your logo here -->
-      <img id="logo"
-      class="logoHeader"
-      src="./images/wee.jpeg"
-         alt="keys pic" /> 
-    <h1>Johannesburg Chamber of Commerce</h1>
-    <!-- Navigation  -->
+    <!-- NAVIGATION HERE -->
     <nav>
-      <ul id = "navbar">
-        <li class="active"><a href="./index.html">Home</a></li>
-        <li><a href="./discovery.html">Discover</a></li>
-        <li><a href="./directory.html">Directory</a></li>
-        <li><a href="./membership.html">Join</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+      
+      <ul class="navigation">
+        <li><a class="ham" href="#">☰</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  </header>
 
-  
-      
-      
-    
-      <div class="main">
-        <div id="section-a" class="dot">
-             <!-- Content for section a -->
-            
-            <img id="landscape"
-            src="./images/keys.jpeg"
-            alt="keys pic" /> 
-            
-          <a class="join" target="_blank" href="./join.html">JOIN US</a>
-        
-        </div>
-    
-        <div id="section-b" class="dot">
-          <!-- Content for section b -->
-    
-    <p>The Johannesburg Chamber of Commerce is dedicated to fostering economic growth, supporting local businesses, and providing a platform for networking and collaboration. We believe in curating tailor-made experiences that immerse you in the local business environment and provide authentic encounters with the city's economic potential. Whether you're seeking business opportunities, networking, or community development, our team of knowledgeable professionals is committed to promoting a thriving business environment in Johannesburg.</p>
-  </div>
+    <!-- CONTENT HERE -->
 
-  <div id="section-c" class="dot">
-    <!-- Content for section c -->
-        </div>
-    
-        <div id="section-c" class="dot">
-          <!-- Content for section c -->
-          <h2>Weather </h2>
-          <img id="weather" src="./images/we.jpeg" alt="weather"
-          <p id="forecast"></p>
-          <p>The weather in Johannesburg, South Africa:
-            <span id="current-temp"></span> &deg;C
-          </p>
-          <p>Wind Speed: <span id="windspeed">?</span>mph</p>
-          <p>Wind Chill: <span id="windchill">?</span>&deg; C</p></p>
-        </div>
-    
-        <div id="section-d" class="dot">
-          <!-- Content for section d -->
-          <p> Our company strives to generate a custom designed logistics network that exceeds the expectations and needs of our clients worldwide through the use of advanced software technology and trained professionals.</p>
-           
-          
-          
-          </p>
-        </div>
-        <div id="section-e" class="dot">
-            <img id="landscape"
-            src="./images/food.webp"
-            alt="keys pic" /> 
-          <!-- Content for section e -->
-        </div> 
-        
-             
-        </div>
-    
-          <div id="section-f" class="dot">
-            <h2>Johannesburg Chamber news
-            </h2>
-              <p id="news">
-                Stay updated with the latest news and announcements from the Johannesburg Chamber of Commerce.</p>
-    
-    
+    <main>
+        <div class="content-container">
+          <h1>Welcome to Johannesburg, The City of Gold</h1>
+          <div class="outside-div">
+            <em>What makes Johannesburg  unique?</em><br />
+            At Miami Adventures, we are passionate about creating unforgettable travel experiences in the vibrant city of Miami, Florida. Our agency specializes in providing exciting excursions and personalized itineraries that cater to your unique preferences and interests.
           </div>
+          <div class="content">
+            <section class="hero-action">
+              <img src="week6/images/boat.jpeg" alt="image of Miami Beach, FL" />
+              <h2>Discover the Maboneng</h2>
+              <form action="join.html">
+                <button type="submit">Join our Excursions</button>
+              </form>
+            </section>
+            <section class="text-center">
+              <h3>Experience the Essence of Joburg</h3>
+              <hr />
+              <div class="text-center">
+                <img src="week6/images/boat.jpeg" alt="Miami skyline image" />
+                Miami Adventures <span class="tiny-text">&copy;</span>
+                <p class="event-info">
+                Our company strives to generate a custom designed logistics network that exceeds the expectations and needs of our clients worldwide through the use of advanced software technology and trained professionals.
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </section>
+            <section class="text-center">
+              <h4>Weather in Johabbesburg</h4>
+              <div class="weather-box">
+                <figure>
+                  <img src="/images/we.jpeg" alt="" id="weather-icon" />
+                  <figcaption></figcaption>
+                </figure>
+                <em class="weather-temp">
+                  <span id="current-temp">32</span>
+                  <span class="tiny-text">&deg;C</span>
+                </em>
+              </div>
+              <hr />
+              <div class="weather-grid">
+                <div>Humidity:</div>
+                <div><span id="current-humidity">68%</span></div>
+                <div>Wind:</div>
+                <div><span id="current-wind">10</span> mph</div>
+                <div>Windchill:</div>
+                <div>
+                  <span id="windchill">78</span>
+                  <span id="windchill-unit">°C</span>
+                </div>
+              </div>
+            </section>
+            <section>
+              <h3 class="text-center">Latest News</h3>
+              <div class="section-news">
+                <div class="news-title">
+                  Johannesburg Chamber of Commerce Wins "Best Travel Agency" Award
+                </div>
+                <div class="news-date">Sunday Times 1 day ago</div> Johannesburg Chamber of Commerce is proud to announce that we have been awarded the prestigious "Best Travel Agency" award by the Sunday Times. This recognition reflects our commitment to providing exceptional service and unforgettable experiences for our valued clients. We would like to express our gratitude to all our customers who have made this achievement possible.
+              </div>
+            </section>
+      
+            <section id="spotlight1" class="text-center spotlight">
+              <h2>Explore Jozi's Hidden Gems</h2>
+            </section>
+            <section id="spotlight2" class="text-center spotlight">
+              <h2>Dance the night away in Sandton
+                <section id="spotlight1" class="text-center spotlight">
+                    <h2>Explore Nelson Mandelas' Historic Home</h2>
+                  </section>
+                  <section id="spotlight2" class="text-center spotlight">
+                    <h2>Johannesburg Chamber News
+</h2>
+                  </section>
+                                  
+                  <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+      <div class="foot-logo-box">
+        <div>
+          <img src="images/logo.webp" alt="Logo" />
+
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
+          width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+                 
+           <h3>Contact Information</h3>
+           <div class="social-links">
+             <a href="https://currents.google.com/" target="_blank">
+                <i class="fa fa-google-plus-square"></i>Google Plus</a>
+             <a href="https://facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square"></i>Facebook</a>
+             <a href="https://flickr.com/" target="_blank">
+                <i class="fa fa-flickr"></i>Flickr</a>
+         </div>
+               <ul class="fa-ul">
+                   <li><i class="fa-li fa fa-location-arrow"></i>564<sup>th</sup>
+                     Catalonia Ave<span id="brk1"></span>
+                       Miami, Florida 22155</li>
+                   <li><i class="fa-li fa fa-phone"></i>(305) 323-6571</li>
+                   <li><i class="fa-li fa fa-envelope"></i>
+                     info@OWS.com</li>
          
+          </div>
         </div>
-      </div>  
-
-<footer>
-  <div class="infoM">
-    <div id="logo_footer">
-      <!-- Add your footer logo here -->
-    </div>
-    <div class="info">
-      <h5>Contact Information</h5>
-      <p>Phone: +27(78) 323-6571</p>
-      <p>Email: jozichamber.com</p>
-    </div>
-    <div class="contact">
-      <h5>Follow Us</h5>
-      <a id="fb" href="#" target="_blank">
-        <img src="facebook_icon.png" alt="Facebook">
-      </a>
-      <a id="insta" href="#" target="_blank">
-        <img src="instagram_icon.png" alt="Instagram">
-      </a>
-    </div>
-    <div class="address">
-      <h5>Address</h5>
-      <p>83 Rivonia Rd, Sandhurst, Sandton, 2196, South Africa</p>
-      <a target="_blank"
-      id="map"
-      href="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.6958093132553!2d28.052719799999995!3d-26.108846699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95732d7abaa2bb%3A0x6e3b5ac49f8d784b!2sSandton%20City!5e0!3m2!1sen!2sus!4v1707622792877!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"</a>
-    </div>
-  </div>
-
-    <section id="development-info">
-      <p>Developed by Nokwazi Kunene for WDD 230</p>
-      <p>Last Modified: <span id="last-modified"></span></p>
-    </section>
-  </footer>
-
-  <!-- JavaScript for last modified date -->
-  <script>
-    document.getElementById('last-modified').innerHTML = document.lastModified;
-  </script>
-
-   <script src="scripts/getdates.js"></script>
-   <script src="scripts/"></script>
-      <script src="scripts/"></script>
-      <script type="module" src="scripts/chamber.js"></script>
-
-</body>
-
+      </div>
+      <hr />
+      <div class="foot-info-box">
+        <div class="date">current date</div>
+        &copy; <span id="year">year</span> &bull;  &copy; <span id="copyrightyear"></span> | Nokwazi Kunene| Florida| <a href="https://www.byui.edu/online">BYUI
+            Online Learning| Last modification:
+        <span id="modified">last modified</span>
+      </div>
+      <script src="scripts/chamber.js"></script>
+      <script src="scripts/windchill.js"></script>
+      <script src="scripts/visits.js"></script>
+      <script src="js/weatherapi.js"></script>
+    </footer>
+  </body>
 </html>
-
