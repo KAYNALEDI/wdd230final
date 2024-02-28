@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Johannesburg Chamber of Commerce</title>
+  <title>Membership Registration Form</title>
   <meta name="description" content="Official website for the Johannesburg Chamber of Commerce. Fostering economic growth and community development.">
   <meta name="author" content="Nokwazi Kunene">
-
+  <head>
+   
   <!-- Social Media Meta Tags  -->
   <meta property="og:title" content="Johannesburg Chamber of Commerce">
   <meta property="og:type" content="website">
@@ -22,20 +23,17 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
-  
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+ <link rel="stylesheet" type="text/css" href="style/normalize.css">
+  <style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+  </style>
   
   
   </head>
   <body>
-    <!-- TOP ANNOUNCEMENT BANNER HERE -->
-    <div class="announcement-banner">
-      🤝🏼 Come join us for a local food dine tour meet greet Wednesday at 7:00 p.m.
-    </div>
-    <!-- BAD WEATHER BANNER HERE -->
-    <div class="weather-warning-banner">☁ Weather Alert! Warning</div>
-    <!-- HEADER HERE -->
-    <header>
+  <header>
       <div class="header-content">
         <a href="index.html"
           ><img src="./images/wee.jpeg" alt="Commerce Logo"
@@ -62,51 +60,145 @@
       </ul>
     </nav>
 
-
-
-     <!-- Footer Section -->
-     <footer>
-        <div class="foot-logo-box">
-          <div>
-            <img src="images/logo.webp" alt="Logo" />
-  
-  
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
-            width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     
-                   
-             <h3>Contact Information</h3>
-             <div class="social-links">
-               <a href="https://currents.google.com/" target="_blank">
-                  <i class="fa fa-google-plus-square"></i>Google Plus</a>
-               <a href="https://facebook.com/" target="_blank">
-                  <i class="fa fa-facebook-square"></i>Facebook</a>
-               <a href="https://flickr.com/" target="_blank">
-                  <i class="fa fa-flickr"></i>Flickr</a>
-           </div>
-                 <ul class="fa-ul">
-                     <li><i class="fa-li fa fa-location-arrow"></i>564<sup>th</sup>
+   
+    
+        <h1>Membership Registration Form</h1>
+        <div class="container">
+          <div class="form-row">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+          </div>
+          <div class="form-row">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+          </div>
+          <div class="form-row">
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+          </div>
+          <div class="form-row">
+            <label for="gender">Gender:</label>
+            <div class="radio-group">
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" name="dob">
+          </div>
+          <div class="form-row">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" maxlength="10">
+          </div>
+          <div class="form-row">
+            <label for="pin">Area PIN:</label>
+            <input type="number" id="pin" name="pin" maxlength="6">
+          </div>
+          <div class="form-row">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state">
+          </div>
+          <div class="form-row">
+            <label for="membership">Membership:</label>
+            <select name="membership" id="membership">
+              <option value="">Select Membership:</option>
+              <option value="NP Member">NP Membership - Free</option>
+              <option value="Bronze">Bronze - $10/month</option>
+              <option value="Silver">Silver - $20/month</option>
+              <option value="Gold">Gold - $30/month</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="membership-benefits">Membership Benefits:</label>
+            <ul id="membership-benefits">
+              <li><strong>NP Membership:</strong> Free access to basic features.</li>
+              <li><strong>Bronze Membership:</strong> Access to premium features, monthly newsletter, and 24/7 support.</li>
+              <li><strong>Silver Membership:</strong> All Bronze benefits plus priority customer support and exclusive discounts.</li>
+              <li><strong>Gold Membership:</strong> All Silver benefits plus access to premium events and personalized assistance.</li>
+            </ul>
+          </div>
+          <div class="form-row">
+            <label for="specialization">Specialization:</label>
+            <div class="checkbox-group">
+              <input type="checkbox" id="volunteer" name="specialization[]" value="Volunteer">
+              <label for="volunteer">Volunteer</label>
+              <input type="checkbox" id="student" name="specialization[]" value="Student">
+              <label for="student">Student</label>
+              <input type="checkbox" id="press" name="specialization[]" value="Press">
+              <label for="press">Press</label>
+              <input type="checkbox" id="investor" name="specialization[]" value="Investor">
+              <label for="investor">Investor</label>
+              <input type="checkbox" id="other" name="specialization[]" value="Other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="8">
+          </div>
+          <br><br>
+          <div class="form-row">
+            <input type="button" value="Submit" onclick="window.location.href='thankyou.html'">
+          </div>
+        </div>
+      </main>
+      <footer>
+        <section class="contact-info">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
+               width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+               <ul class="fa-ul">
+                   <h3>Contact Information</h3>
+                   <li><i class="fa-li fa fa-location-arrow"></i>564<sup>th</sup>
                        Catalonia Ave<span id="brk1"></span>
                          Miami, Florida 22155</li>
                      <li><i class="fa-li fa fa-phone"></i>(305) 323-6571</li>
                      <li><i class="fa-li fa fa-envelope"></i>
                        info@OWS.com</li>
-           
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="foot-info-box">
-          <div class="date">current date</div>
-          &copy; <span id="year">year</span> &bull;  &copy; <span id="copyrightyear"></span> | Nokwazi Kunene| Florida| <a href="https://www.byui.edu/online">BYUI
-              Online Learning| Last modification:
-          <span id="modified">last modified</span>
-        </div>
-        <script src="scripts/chamber.js"></script>
-        <script src="scripts/windchill.js"></script>
-        <script src="scripts/visits.js"></script>
-        <script src="js/weatherapi.js"></script>
-      </footer>
+               </ul>
+               <div class="social-links">
+                   <a href="https://currents.google.com/" target="_blank" rel="noopener">
+                      <i class="fa fa-google-plus-square"></i>Google Plus</a>
+                   <a href="https://facebook.com/" target="_blank" rel="noopener">
+                      <i class="fa fa-facebook-square"></i>Facebook</a>
+                   <a href="https://flickr.com/" target="_blank" rel="noopener">
+                      <i class="fa fa-flickr"></i>Flickr</a>
+               </div>
+           </section>
+     
+     
+           &copy;<span id="currentyear"></span>Oar Chamber Services </p>
+               <p><strong> Nokwazi Kunene </strong> </p>
+               <p> WDD 230 Project </p>  
+            <a href="https://www.byui.edu/online">BYUI
+               Online Learning</a>  | 
+       </div>
+       Last Updated: <span id="last-updated"></span> 
+    
+          </footer>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+       <script src="./js/scripts.js"></script>
+        <script src="js/membership.js"></script>
+    <script src="script.js"></script>  
+       
+    
+         
+         
+       
+    
     </body>
-  </html>
-  
+    
+    </html>
+    
