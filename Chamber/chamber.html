@@ -51,17 +51,24 @@
     </header>
 
     <!-- NAVIGATION HERE -->
-    <nav>
-      
-      <ul class="navigation">
-        <li><a class="ham" href="#">☰</a></li>
-        <li class="active"><a href="chamber.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <div class="dropdown">
+        <button class="dropbtn">Join 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="join.html">Membership</a>
+          <a href="#">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div> 
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
     <!-- CONTENT HERE -->
 
