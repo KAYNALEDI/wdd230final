@@ -62,5 +62,24 @@
     justify-content: space-evenly;
   }
   
-  
+/* Add a dark mode class */
+body.dark-mode {
+  background-color: #827f7f;
+  color: #fff;
+}
+
+/* Rest of the styles remain unchanged */
+
+.dark-mode-toggle {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle label {
+  margin-right: 10px;
+}
+
+
+
   

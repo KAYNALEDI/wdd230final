@@ -7,3 +7,9 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+
+  function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
