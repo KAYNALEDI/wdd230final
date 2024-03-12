@@ -68,6 +68,57 @@
     <a href="#about">About</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
+  <body>
+    <!-- <div class="shadow-blocker-1"></div>
+    <div class="shadow-blocker-2"></div>
+    <div id="big-banner">
+        <i class="fa fa-bell"></i>
+        <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m..</span>
+        <i onclick="closeBanner()" class="fa fa-close"></i>
+    </div> -->
+  <header>
+    <div id="logo_link">
+      <!-- Add your logo here -->
+      <img id="logo"
+      class="logoHeader"
+      src="./images/wee.jpeg"
+         alt="keys pic" /> 
+    <h1> Oar Chamber Services</h1>
+
+  </header>
+
+  <div class="header-today">
+    <p class="date"></p>
+<!--     <button id = "hamburger-menu">
+        <span id ="menu-closed">&equiv; </span>
+        <span class="material-symbols-outlined" id="menu-open"> </span>
+    </button> -->
+  </div>
+    <nav>
+      <ul id = "navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./discovery.html">Discover</a></li>
+        <li class="active"><a href="./directory.html">Directory</a></li>
+        <li><a href="./membership.html">Join</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+
+    
+    <h1>Joburg Travel Company Directory</h1>
+    <div class="directory-container">
+        <div class="view-options">
+            <button id="list-view-btn" class="active" onclick="switchView('list')">List View</button>
+            <button id="grid-view-btn" onclick="switchView('grid')">Grid View</button>
+        </div>
+        <ul class="company-list" id="company-list">
+            <!-- Company list will be dynamically populated -->
+        </ul>
+        <div class="company-grid" id="company-grid">
+            <!-- Company grid will be dynamically populated -->
+        </div>
+    </div>
 
 
      <!-- Footer Section -->
@@ -109,6 +160,7 @@
         <script src="scripts/windchill.js"></script>
         <script src="scripts/visits.js"></script>
         <script src="js/weatherapi.js"></script>
+        <script src="scripts/directory.js"></script>
      
     </body>
   </html>

@@ -592,7 +592,19 @@ a {
 
 
 /*directory page*/
-.dir-buttons{
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.company-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* .dir-buttons{
 text-align: end;
 }
 #dir-panel{
@@ -636,7 +648,7 @@ text-align: end;
 
 .directory-grid section a {
     text-align: right;
-}
+} */
 
 
 /* panel view */
