@@ -60,14 +60,4 @@ function displayResults(data) {
 function fetchVisits() {
     // Simulating an asynchronous HTTP request
     setTimeout(() => {
-        // Assuming you have a server-side endpoint that returns the number of visits
-        // In this example, I'm just setting a dummy value of 100 as the number of visits
-        const visits = 100;
-
-        // Update the visits placeholder text with the actual number of visits
-        document.getElementById('visitsPlaceholder').textContent = visits;
-    }, 1000); // Simulating 1 second delay for the HTTP request
-}
-
-// Call the fetchVisits function to update the visits placeholder when the page loads
-fetchVisits();
+        // Assuming you have a server-side endpoint that returns the number of
