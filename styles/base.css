@@ -58,11 +58,59 @@ main {
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding and border in total width/height */
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+#app-display {
+  margin-bottom: 15px;
+}
+
+#current-temp {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#weather-icon {
+  width: 80px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px;
+}
+
+figcaption {
+  margin-top: 5px;
+  text-align: center;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Media Query for small screens */
+@media only screen and (max-width: 600px) {
+  .card {
+    padding: 10px;
+  }
+
+  #current-temp {
+    font-size: 18px;
+  }
+
+  #weather-icon {
+    width: 60px;
+  }
 }
 
 /*footer {
