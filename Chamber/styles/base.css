@@ -32,16 +32,22 @@ h1, h2, h3, h4{
 
 /*----------- HEADER --------------*/
 
-.announcement-banner {
-min-height: 5em;
-background-color:   #eee9e9;
-color: black;
-text-align: center;
-display: none;
-align-items: center; /* Vertical center alignment */
-justify-content: center; /* Horizontal center alignment */
-font-size: 1.1em;
+.banner {
+    display: block; /* Ensure the banner is initially visible */
+    background-color: #f0f0f0; /* Example background color */
+    padding: 10px; /* Example padding */
+    border: 1px solid #ccc; /* Example border */
+    margin-bottom: 20px; /* Example margin */
 }
+
+.close-button {
+    cursor: pointer; /* Change cursor to pointer to indicate clickable element */
+}
+
+.close-button:hover {
+    text-decoration: underline; /* Underline the close button on hover */
+}
+
 
 .weather-warning-banner {
     padding-top: 0.3em;
@@ -55,27 +61,144 @@ font-size: 1.1em;
     }
 
 
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff; /* White background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
 .header-content {
-    padding: .8rem 2%;
-  
-    background-image: #c73e3e;
-    display: grid;
-    grid-template-columns: 100px auto;
-}
-.header-content div {
-    margin-left:10px;
+    display: flex;
+    align-items: center;
 }
 
-.header-content h1 {margin: 0;}
-.header-content h2 {margin: 0; font-weight: normal; padding-top:5px;}
+.header-content img {
+    width: 60px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between logo and text */
+}
 
+.header-content h1,
+.header-content h2 {
+    margin: 0;
+    color: #333333; /* Dark text color */
+}
 
-.date {
-    grid-column: span 2;
+/* Navigation styles */
+nav {
+    background-color: #333333; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
     text-align: center;
-    margin-top: 0.4em;
-    
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
 }
+
+.topnav a:hover {
+    background-color: #555555; /* Darker background color on hover */
+    color: #ffffff;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333333; /* Dark background color */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555555; /* Darker background color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
 
 
 /*----------- NAVIGATION --------------*/
@@ -89,7 +212,7 @@ font-size: 1.1em;
 .topnav a {
   float: left;
   display: block;
-  color: y: block;
+  color: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -99,8 +222,8 @@ font-size: 1.1em;
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #9faaa6;
-  color: rgb(231, 24, 24);
+  background-color: #88918d;
+  color: rgb(26, 24, 24);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -195,8 +318,6 @@ font-size: 1.1em;
     text-align: left;
   }
 }
-ADVERTISEMENT
-
 
 
 
@@ -471,12 +592,12 @@ display: none;
 button {
     padding: 0.6rem;
     border-radius: 16px;
-    background-color:#ba16af;
+    background-color:#938c93;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 4px, rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
 }
 
 button:hover {
-    background-color:#d770b8;
+    background-color:#deced9;
     cursor: pointer;
 }
 
@@ -493,9 +614,7 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.join b {
-    color:rgb(248, 143, 229)
-}
+
 .join button {
     width:70%;
     margin: 0 auto;
@@ -913,35 +1032,7 @@ div.social-links .fa-flickr:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* Discover Page Styles */
-/* .discover-main {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .discover-module {
-    margin-bottom: 20px;
-  }
-  
-  .discover-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  
-  .discover-images figure {
-    margin: 0;
-  }
-  
-  .discover-images img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .discover-images figcaption {
-    margin-top: 10px;
-  } */
-  
+
   /* Responsive Styles for Medium and Large Views */
   @media screen and (min-width: 768px) {
     .discover-module {
@@ -978,7 +1069,7 @@ div.social-links .fa-flickr:hover {
 
    
     footer {
-      background-color: var(--bg-color);
+      background-color: rgb(207, 203, 206);
       text-align: center;
       font-weight: bold;
       font-size: 0.9em;
@@ -1027,7 +1118,7 @@ div.social-links .fa-flickr:hover {
     
     .social-links a {
       text-decoration: none;
-      color: #264a41;
+      color: #0e0e0e;
       display: flex;
       align-items: center;
       margin-bottom: 10px;

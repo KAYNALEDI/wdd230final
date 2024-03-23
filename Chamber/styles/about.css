@@ -1,0 +1,31 @@
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+} 
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+    
+ 
+.caption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}

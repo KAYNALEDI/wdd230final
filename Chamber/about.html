@@ -19,82 +19,69 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/chamber.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
-  
+  <link rel="stylesheet" href="styles/about.css">
   <link rel="stylesheet" href="styles/normalize.css">
   
   
   </head>
   <body>
-    
-   <!-- HEADER HERE -->
+   
+    <!-- HEADER HERE -->
     <header>
       <div class="header-content">
-        <a href="index.html"
-          ><img src="images/MainLogo.png" alt="Commerce Logo"
-        /></a>
+        <a href="index.html">
+          <img src="images/MainLogo.png" alt="Commerce Logo"/></a>
         <div>
           <h1>Johannesburg Chamber of Commerce</h1>
           <h2>Where heart meets soul!</h2>
         </div>
 
-        
     </header>
 
-     <!-- NAVIGATION HERE -->
+    <!-- NAVIGATION HERE -->
     
-   <div class="topnav" id="myTopnav">
-    <a href="index.html">Home</a>
-    <a href="discover.html">Discover</a>
-    <a href="#directory" class="active">Directory</a>
-    <div class="dropdown">
-      <button class="dropbtn">Join 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="join.html">Membership</a>
-      
-        <a href="contact.html">Contact</a>
-      </div>
-    </div> 
-    <a href="about.html">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-  <body>
-  
-  <header>
-    <div id="logo_link">
-     
-  </header>
-
-  <div class="header-today">
-    <p class="date"></p>
-<!--     <button id = "hamburger-menu">
-        <span id ="menu-closed">&equiv; </span>
-        <span class="material-symbols-outlined" id="menu-open"> </span>
-    </button> -->
-  </div>
-  
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <div class="dropdown">
+        <button class="dropbtn">Join 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="join.html">Membership</a>
     
-    <h1>Joburg Travel Company Directory</h1>
-    <div class="directory-container">
-        <div class="view-options">
-            <button id="list-view-btn" class="active" onclick="switchView('list')">List View</button>
-            <button id="grid-view-btn" onclick="switchView('grid')">Grid View</button>
+          <a href="contact.html">Contact</a>
         </div>
-        <ul class="company-list" id="company-list">
-            <!-- Company list will be dynamically populated -->
-        </ul>
-        <div class="company-grid" id="company-grid">
-            <!-- Company grid will be dynamically populated -->
-        </div>
+      </div> 
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-
-     <!-- Footer Section -->
-     <footer>
+<body>
+    <header>
+        <h1>Discover Johannesburg</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Johannesburg</h2>
+            <p>Johannesburg, often referred to as Joburg or Jozi, is the largest city in South Africa. It is a vibrant and diverse metropolis known for its rich history, cultural diversity, and economic significance.</p>
+            <p>The city was founded in 1886 following the discovery of gold, which led to rapid growth and development. Today, Johannesburg is a bustling hub of activity, home to a dynamic arts scene, thriving business districts, and a range of world-class attractions.</p>
+        </section>
+        <section id="beauty">
+            <h2>The Beauty of Johannesburg</h2>
+            <div class="image-container">
+                <img src="images/sweet-life-zbI9maUvcaM-unsplash.jpg" alt="Johannesburg skyline">
+                <p class="caption">Johannesburg skyline with friends</p>
+            </div>
+            <p>Johannesburg boasts stunning natural landscapes, including lush parks, nature reserves, and botanical gardens. Visitors can explore the scenic beauty of places like the Walter Sisulu National Botanical Garden or take a leisurely stroll through the picturesque Emmarentia Dam.</p>
+            <p>Beyond its natural beauty, Johannesburg is also renowned for its vibrant street art scene, with colorful murals adorning buildings throughout the city. These vibrant artworks not only add to the visual appeal of Johannesburg but also serve as a reflection of its diverse culture and heritage.</p>
+        </section>
+    </main>
+    <footer>
         <section class="contact-info">
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
                width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -104,7 +91,7 @@
                    <li><i class="fa-li fa fa-location-arrow"></i>564<sup>th</sup>
                        Catalonia Ave<span id="brk1"></span>
                          Miami, Florida 22155</li>
-                     <li><i class="fa-li fa fa-phone"></i>(305) 323-6571</li>
+                     <li><i class="fa-li fa fa-phone"></i>081 323-6571</li>
                      <li><i class="fa-li fa fa-envelope"></i>
                        info@OWS.com</li>
                </ul>
@@ -128,13 +115,12 @@
        Last Updated: <span id="last-updated"></span> 
     
           </footer>
-        <script src="scripts/chamber.js"></script>
-        <script src="scripts/windchill.js"></script>
-        <script src="scripts/visits.js"></script>
-        <script src="js/weatherapi.js"></script>
-        <script src="scripts/directory.js"></script>
-        
-     
-    </body>
-  </html>
-  
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+       <script src="./js/scripts.js"></script>
+        <script src="js/membership.js"></script>
+    <script src="script.js"></script>  
+    
+    </body> 
+    </html>
+    

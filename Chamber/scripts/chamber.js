@@ -13,3 +13,12 @@ function myFunction() {
     const body = document.body;
     body.classList.toggle('dark-mode');
 }
+
+// Define the function to close the banner
+function closeBanner() {
+  document.querySelector('.banner').style.display = 'none'; // Hide the banner when the close button is clicked
+}
+
+// Attach the click event listener to the close button
+document.querySelector('.close-button').addEventListener('click', closeBanner);
+
