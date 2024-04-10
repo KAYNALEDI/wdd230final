@@ -1,5 +1,3 @@
-÷
-
 /* Reset styles */
 * {
     margin: 0;
@@ -7,66 +5,298 @@
     box-sizing: border-box;
 }
 
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
-.table-container {
-    margin: 20px auto;
-    max-width: 800px;
+.container {
+    max-width: 1100px;
+    margin:  auto;
+    padding:  20px;
 }
 
-table {
+/* Header styles */
+.header {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/christopher-burns-Pl0s3qM0A_w-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: -20px;
+}
+
+.header p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 60vh;
     width: 100%;
-    border-collapse: collapse;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(77, 81, 98, 0.7)),url("/images/christopher-burns-Pl0s3qM0A_w-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
-caption {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 135px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: .5s;    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
 }
 
-th, td {
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 20px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+}
+
+
+@media(max-width: 700px)
+{
+   .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links
+    {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer; 
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #ffc107;
+}
+
+/* Container styles */
+.containern {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.containern .row {
+    margin-bottom: 20px;
+}
+
+.containern .col-10 {
+    flex: 10%;
+}
+
+.containern .col-90 {
+    flex: 90%;
+}
+
+.containern label {
+    font-weight: bold;
+}
+
+.containern input[type="text"],
+.containern input[type="email"],
+.containern input[type="tel"],
+.containern input[type="date"],
+.containern input[type="password"],
+.containern select,
+.containern textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    padding: 8px;
+    border-radius: 5px;
+}
+
+.containern input[type="radio"] {
+    margin-right: 10px;
+}
+
+.containern button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.containern button[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
     text-align: center;
 }
 
-th {
-    background-color: #f2f2f2;
+.footer h3 {
+    margin-bottom: 20px;
 }
 
-thead th {
-    background-color: #e6e6e6;
+.footer .contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+.footer .contact-info iframe {
+    width: 300px;
+    height: 200px;
 }
 
-
-/* Your existing CSS styles */
-
-/* Image grid styles */
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-gap: 20px; /* Gap between images */
+.footer .fa-ul {
+    list-style-type: none;
+    margin-bottom: 20px;
 }
 
-.image-grid img {
-    width: 100%; /* Make images fill their grid cells */
-    height: auto; /* Maintain aspect ratio */
+.footer .fa-ul li {
+    margin-bottom: 10px;
 }
 
-/* Media query for small screens */
+.footer .icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    .footer .contact-info {
+        flex-direction: column;
     }
 
-    .image-grid img {
-        width: 100%; /* Make images fill their grid cells */
-        height: auto; /* Maintain aspect ratio */
+    .footer .contact-info iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer .icons {
+        margin-top: 20px;
     }
 }
