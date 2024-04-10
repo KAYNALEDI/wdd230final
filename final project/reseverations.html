@@ -1,0 +1,205 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cozumel Scooter Rentals</title>
+<link rel="stylesheet" href="styles/index.css">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/images/logocozumel.png" alt="Scooter Rental Company Logo"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Cozumel Scooter Rentals</h1>
+            <p>Explore the island hassle-free with our reliable scooter rental services.</p>
+            <a href="contact.html" class="hero-btn">Rent Now</a>
+        </div>
+    </section>
+<body>
+    <h1>Membership Registaration Form</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <label for="fname">First Name:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="lname">Last Name:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="email">Email:</label>
+            </div>
+            <div class="col-90">
+                <input type="email" id="email" name="email" placeholder="it should contain @,.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="mobile">Mobile:</label>
+            </div>
+            <div class="col-90">
+                <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="gender" required>Gender:</label>
+            </div>
+            <div class="col-90">
+                <input type="radio" id="male" name="gender" value="male"/>Male
+                <input type="radio" id="female" name="gender" value="female"/>Female
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="dob">Date Of Birth:</label>
+            </div>
+            <div class="col-90">
+                <input type="Date" id="dob" name="dob">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="address">Address:</label>
+            </div>
+            <div class="col-90">
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="city">City:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="city" name="city" maxlength="10">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="pincode">Area PIN:</label>
+            </div>
+            <div class="col-90">
+                <input type="number" id="pin" name="pin" maxlength="6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="state">State:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="state" name="state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="qualification" required >Rental Options:</label>
+            </div>
+            <div class="col-90">
+                <select name="qualification" id="membership">
+                    <option value=" ">Select Rental:</option>
+                    <option value="NP Member">Honda Metropolitan (49cc) - 1 person
+</option>                 
+                    <option value="Bronze">Honda Dio (110cc) - 2 person
+</option>
+                    <option value="Silver.">Honda PCX150 (149cc) - 2 person
+</option>
+                    <option value="Gold">Side-by-Side ATVs
+Honda Pioneer 1000 - 4 person
+</option>
+                                         <option value="Gold">                    
+Jeep Wrangler - 4 door manuel with A/C - 5 person
+</option>
+                                         <option value="Gold">Jeep Wrangler - 2 door - open air - manuel - 4 person
+</option>
+                  
+
+
+                  
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="specialization"></label>
+            </div>
+            <div class="col-90">
+                <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Volunteer">Volunteer<br/>
+                <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Student">Student<br/>
+                <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Press">Press<br/>
+                <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Investor">Investor<br/>
+                <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Other">Other<br/>                                                                                              
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="password">Password:</label>
+            </div>
+            <div class="col-90">
+                <input type="password" id="password" name="password" maxlength="8">
+            </div>
+        </div>
+        <div class="row">
+            
+           <button type="submit" onClick="submit-button">Submit</submit-button>                                                                       
+        </div>  
+    </div>  
+
+</main>
+
+<section class="footer">
+    <h4></h4>
+    <section class="contact-info">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1712470266707!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        <ul class="fa-ul">
+            <h3>Contact Information</h3>
+            <li><i class="fa-li fa fa-location-arrow"></i>Quintana Roo, Mexico</li>
+            <li><i class="fa-li fa fa-phone"></i>(305) 323-6571</li>
+            <li><i class="fa-li fa fa-envelope"></i>info@crs.com</li>
+        </ul> 
+        
+        <div class="icons">
+            <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="instagram.com"><i class="fa fa-instagram"></i></a>
+           
+            
+        </div>
+
+    
+    <a href="#" class="footer-link"><p>&copy; Cozumel Scooter Rentals - All Rights Reserved</p>
+        <p id="lastModified"></p> by Your Scooter Rental Company</p></a>
+</section>
+
+<script src="scripts/index.js"></script>
+
+</body>
+</html>

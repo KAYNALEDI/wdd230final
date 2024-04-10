@@ -13,28 +13,28 @@ body {
 
 .container {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin:  auto;
+    padding:  20px;
 }
 
 /* Header styles */
 .header {
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/christopher-burns-Pl0s3qM0A_w-unsplash.jpg");
     background-position: center;
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 20px 0;
 }
 
 .header h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
 }
 
 .header p {
     font-size: 1.1em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 *{
     margin: 0;
@@ -42,9 +42,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .header{
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/christopher-burns-Pl0s3qM0A_w-unsplash.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(77, 81, 98, 0.7)),url("/images/christopher-burns-Pl0s3qM0A_w-unsplash.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -258,24 +258,196 @@ nav {
     margin-bottom: 50px;
 }
 
-/* Footer styles */
-.footer {
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    .service-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.scooter {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.scooter h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.scooter p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.scooter-col {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+
+.scooter-col h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.scooter-col p {
+    font-size: 16px;
+}
+
+/* Campus Section Styles */
+.rides {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.rides h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.rides p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.rides-col {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+
+/* Facility Section Styles */
+.faci {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faci h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.faci p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.faci-col {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
+.testimonials h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  
+/* Text Box Styles */
+.text-box {
+    margin-top: 50px;
+}
+
+.text-box h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+}
+
+.testimonials p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.testimonial-col {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.testimonial-col img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-col div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-col div p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.testimonial-col div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fa-star, .fa-star-o, .fa-star-half-o {
+    color: #ffd700;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+.cta {
     background-color: #333;
     color: #fff;
     padding: 50px 0;
     text-align: center;
 }
 
-.footer h4 {
+.cta h1 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-.icons a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 1.5em;
+.hero-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
     text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
+
+.hero-btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* Footer Section Styles */
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
 
 .footer-link {
     color: #fff;
@@ -285,10 +457,182 @@ nav {
     display: block;
 }
 
-/* Media queries */
-@media (max-width: 768px) {
-    .service-col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
+
+.contact-info iframe {
+    width: 400px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #ffd700; /* Change color on hover if desired */
+}
+
+
+.contacts-col {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contacts-col form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-col input,
+.contacts-col textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contacts-col textarea {
+    resize: vertical;
+}
+
+.contacts-col button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347; /* Change to desired button color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacts-col button:hover {
+    background-color: #cc4a35; /* Change to desired button hover color */
+}
+
+/* Your custom CSS styles can go here */
+.message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.weather-info {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  } 
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  .col-10 {
+    width: 10%;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .col-90 {
+    width: 90%;
+    float: left;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 768px) {
+    .col-10,
+    .col-90 {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+    }
+  }
+  

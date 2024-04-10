@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cozumel Scooter Rentals</title>
 <link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/table.css">
+
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  -->
 </head>
@@ -17,56 +19,40 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="rentals.html">RENTAL</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
-            <h1>Cozumel Scooter Rentals</h1>
-            <p>Explore the island hassle-free with our reliable scooter rental services.</p>
-            <a href="contact.html" class="hero-btn">Rent Now</a>
-        </div>
-    </section>
-    
-    <section class="services">
-        <h1>Our Scooter Rental Services</h1>
-        <p>We offer a variety of scooter rental options to suit your needs while exploring Cozumel.</p>
-        <div class="row">
-            <div class="service-col">
-                <h3>Standard Scooters</h3>
-                <p>Efficient and affordable scooters for your everyday island adventures.</p>
-            </div>
-            <div class="service-col">
-                <h3>Luxury Scooters</h3>
-                <p>Upgrade your experience with our premium selection of luxury scooters.</p>
-            </div>
-            <div class="service-col">
-                <h3>Electric Scooters</h3>
-                <p>Environmentally-friendly and convenient electric scooters for eco-conscious travelers.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="about">
-        <h1>About Cozumel Scooter Rentals</h1>
-        <p>Discover our commitment to providing top-notch scooter rental services and enhancing your Cozumel experience.</p>
-        <!-- Add content about your scooter rental company -->
-    </section>
-    
-    <section class="clients">
-        <h1>Our Customers</h1>
-        <p>Explore testimonials from our satisfied customers who enjoyed their adventures with our scooters.</p>
-        <!-- Add content about your customers -->
-    </section>
-    
-    <section class="contact">
-        <h1>Contact Us</h1>
-        <p>Get in touch with us to reserve your scooter and start your Cozumel adventure!</p>
-        <!-- Add contact form or contact details -->
-    </section>
-    
+<body>
+    <div class="table-container">
+        <table id="rentalTable">
+            <caption>Max Rental Pricing</caption>
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Reservation (Half Day)</th>
+                    <th>Reservation (Full Day)</th>
+                    <th>Walk-In (Half Day)</th>
+                    <th>Walk-In (Full Day)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="image-grid">
+        <img src="images/abed-ismail-SVzfrZjq1L8-unsplash.jpg" alt="Image 1">
+        <img src="images/eric-michael-KA9W4k0pOn4-unsplash.jpg" alt="Image 2">
+        <img src="images/abed-ismail-SVzfrZjq1L8-unsplash.jpg" alt="Image 1">
+        <img src="images/eric-michael-KA9W4k0pOn4-unsplash.jpg" alt="Image 2">
+        <img src="images/abed-ismail-SVzfrZjq1L8-unsplash.jpg" alt="Image 1">
+        <img src="images/eric-michael-KA9W4k0pOn4-unsplash.jpg" alt="Image 2">
+        <!-- Add more images as needed -->
+    </div>
+
     <section class="footer">
         <h4></h4>
         <section class="contact-info">
@@ -95,5 +81,10 @@
   
     <script src="scripts/index.js"></script>
     
+</body>
+</html>
+
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
