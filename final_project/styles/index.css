@@ -302,7 +302,7 @@ body {
     color: #ffd700; /* Change color on hover if desired */
 }
 .banner {
-  background-color: #f0f0f0;
+/*   background-color: #f0f0f0; */
   color: #333;
   padding: 10px 20px;
   display: flex;
@@ -310,13 +310,13 @@ body {
   align-items: center;
 }
 
-.close-button {
-  background-color: #ccc;
+/* .close-button {
+ 
   border: none;
   color: #333;
   padding: 5px 10px;
   cursor: pointer;
-}
+} */
 
 
 /* Header styles */
