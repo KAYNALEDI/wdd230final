@@ -112,3 +112,26 @@
             })
             .catch(error => console.error('Error fetching current weather data:', error));
     });
+
+
+
+// Simulated function to get the high temperature for the day
+function getHighTemperature() {
+  // Simulated temperature data, replace with actual API call
+  return Math.floor(Math.random() * 20) + 20; // Random temperature between 20 and 40
+}
+
+// Function to update the banner with the high temperature
+function updateBannerWithTemperature() {
+  const temperatureElement = document.getElementById('temperature');
+  const tempMax = getHighTemperature();
+  temperatureElement.textContent = `High Temperature: ${tempMax}°C`;
+}
+
+// Update banner with temperature when the page loads
+updateBannerWithTemperature();
+
+// Add event listener to close button
+document.querySelector('.close-button').addEventListener('click', function() {
+  document.getElementById('announcementBanner').style.display = 'none';
+});
