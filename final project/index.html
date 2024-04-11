@@ -27,7 +27,12 @@
             <h1>Cozumel Scooter Rentals</h1>
            
         </div>
+        
     </section>
+    <div id="message" class="message">
+        <span id="tempMax"></span>
+        <span class="close-btn" onclick="closeMessage()">&times;</span>
+    </div>
     
     <section class="services">
         <h1>Our Scooter Rental Services</h1>
@@ -60,7 +65,16 @@
           <img src="images/iqbal-muakhid-VuCJjPZUZaY-unsplash.jpg" alt="Mountains" width="600" height="400">
         </div>
     </section>
-       
+
+    <div class="weather-container">
+        <h2>Weather Information</h2>
+        <div class="weather-info">
+            <p><strong>Current Temperature:</strong> <span id="current-temp"></span></p>
+            <p><strong>Current Humidity:</strong> <span id="current-humidity"></span></p>
+            <p><strong>Forecasted Temperature Tomorrow (3:00pm):</strong> <span id="forecast-temp"></span></p>
+            <div id="weather-details"></div>
+        </div>
+    </div>
     
     <section class="footer">
         <h4></h4>
