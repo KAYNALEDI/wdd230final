@@ -17,6 +17,308 @@ body {
     padding:  20px;
 }
 
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.fa-bars, .fa-close {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Text Box Styles */
+.text-box {
+    margin-top: 50px;
+}
+
+.text-box h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Course Section Styles */
+.scooter {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.scooter h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.scooter p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.scooter-col {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+
+.scooter-col h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.scooter-col p {
+    font-size: 16px;
+}
+
+/* Campus Section Styles */
+.rides {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.rides h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.rides p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.rides-col {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+
+/* Facility Section Styles */
+.faci {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faci h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.faci p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.faci-col {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
+.testimonials h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  
+/* Text Box Styles */
+.text-box {
+    margin-top: 50px;
+}
+
+.text-box h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+}
+
+.testimonials p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.testimonial-col {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.testimonial-col img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-col div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-col div p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.testimonial-col div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fa-star, .fa-star-o, .fa-star-half-o {
+    color: #ffd700;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+.cta {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* Footer Section Styles */
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-info iframe {
+    width: 400px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #ffd700; /* Change color on hover if desired */
+}
+.banner {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background-color: #ccc;
+  border: none;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
 /* Header styles */
 .header {
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/christopher-burns-Pl0s3qM0A_w-unsplash.jpg");
