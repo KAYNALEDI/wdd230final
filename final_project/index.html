@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cozumel Scooter Rentals</title>
+<link rel="stylesheet" href="styles/index.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logocozumel.png" alt="Scooter Rental Company Logo"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="reseverations.html">RESERVATIONS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Cozumel Scooter Rentals</h1>
+           
+        </div>
+        
+    </section>
+    <div id="message" class="message">
+        <span id="tempMax"></span>
+        <span class="close-btn" onclick="closeMessage()">&times;</span>
+    </div>
+    
+    <section class="services">
+        <h1>Our Scooter Rental Services</h1>
+        <p>We offer a variety of scooter rental options to suit your needs while exploring Cozumel.</p>
+        <div class="row">
+            <div class="service-col">
+                <h3>Standard Scooters</h3>
+                <p>Efficient and affordable scooters for your everyday island adventures.</p>
+            </div>
+            <div class="service-col">
+                <h3>Luxury Scooters</h3>
+                <p>Upgrade your experience with our premium selection of luxury scooters.</p>
+            </div>
+            <div class="service-col">
+                <h3>Electric Scooters</h3>
+                <p>Environmentally-friendly and convenient electric scooters for eco-conscious travelers.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+    
+        <h2>Explore the island hassle-free with our reliable scooter rental services.</h2>
+        <a href="contact.html" class="hero-btn">Rent Now</a>
+        <div class="scroll-container">
+          <img src="images/abed-ismail-SVzfrZjq1L8-unsplash.jpg" alt="Sunset" width="600" height="400">
+          <img src="images/conor-luddy-R2PpxA2j0pQ-unsplash.jpg" alt="City" width="600" height="400">
+          <img src="images/foad-memariaan-6zIRDW1hWmg-unsplash.jpg" alt="Beach" width="600" height="400">
+          <img src="images/christopher-burns-Pl0s3qM0A_w-unsplash.jpg" alt="Bike" width="600" height="400">
+          <img src="images/iqbal-muakhid-VuCJjPZUZaY-unsplash.jpg" alt="Mountains" width="600" height="400">
+        </div>
+    </section>
+
+    <div class="weather-container">
+        <h2>Weather Information</h2>
+        <div class="weather-info">
+            <p><strong>Current Temperature:</strong> <span id="current-temp"></span></p>
+            <p><strong>Current Humidity:</strong> <span id="current-humidity"></span></p>
+            <p><strong>Forecasted Temperature Tomorrow (3:00pm):</strong> <span id="forecast-temp"></span></p>
+            <div id="weather-details"></div>
+        </div>
+    </div>
+    
+    <section class="footer">
+        <h4></h4>
+        <section class="contact-info">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1712470266707!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            <ul class="fa-ul">
+                <h3>Contact Information</h3>
+                <li><i class="fa-li fa fa-location-arrow"></i>Quintana Roo, Mexico</li>
+                <li><i class="fa-li fa fa-phone"></i>(305) 323-6571</li>
+                <li><i class="fa-li fa fa-envelope"></i>info@crs.com</li>
+            </ul> 
+            
+            <div class="icons">
+                <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="instagram.com"><i class="fa fa-instagram"></i></a>
+               
+                
+            </div>
+    
+        
+        <a href="#" class="footer-link"><p>&copy; Cozumel Scooter Rentals - All Rights Reserved</p>
+            <p id="lastModified"></p> by Your Scooter Rental Company</p></a>
+    </section>
+    
+    <script src="scripts/index.js"></script>
+        <script src="scripts/main.js"></script>
+</body>
+</html>
